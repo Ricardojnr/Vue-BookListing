@@ -8,6 +8,9 @@
       <li>{{ title }}</li>
       <li>{{ title }}</li>
     </ul>
+    <li v-for="book in books" :key="book.title">
+      { }
+    </li>
   </div>
 </template>
 
@@ -38,6 +41,6 @@ ul {
 }
 li {
   display: block;
-  margin: 0;
+  margin: 0 10px;
 }
 </style>
