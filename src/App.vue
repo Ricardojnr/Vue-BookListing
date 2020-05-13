@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <h1>ttttttttttt</h1>
     <img src="./assets/logo.png" />
     <Book-List></Book-List>
   </div>
