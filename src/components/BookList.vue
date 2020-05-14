@@ -4,10 +4,6 @@
       {{ title }}
     </h1>
     <ul>
-      <!-- <li v-for="book in books" :key="book.title">
-        {{ book.title }}: {{ book.author }}
-      </li> -->
-
       <Book-Item v-for="book in books" :book="book" :key="book.title">
       </Book-Item>
     </ul>
