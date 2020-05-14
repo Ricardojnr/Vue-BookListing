@@ -1,5 +1,5 @@
 <template>
-  <form class="" action="#" method="post">
+  <form v-on:submit.prevent="onSubmit" class="" action="#" method="post">
     <input
       v-model="bookTitle"
       type="text"
@@ -21,11 +21,17 @@
 export default {
   name: "BookForm",
   props: ["books"],
+
   data() {
     return {
-      BookTitle: "",
-      BookAuhtor: "",
+      bookTitle: "",
+      bookAuhtor: "",
     };
+  },
+  methods: {
+    bookSubmit(bookTitle, bookAuhtor) {
+      this.$emit("addBook", bookTitle, bookAuhtor);
+    },
   },
 };
 </script>
