@@ -25,12 +25,12 @@ export default {
   data() {
     return {
       bookTitle: "",
-      bookAuhtor: "",
+      bookAuthor: "",
     };
   },
   methods: {
-    bookSubmit(bookTitle, bookAuhtor) {
-      this.$emit("addBook", bookTitle, bookAuhtor);
+    bookSubmit(bookTitle, bookAuthor) {
+      this.$emit("addBook", bookTitle, bookAuthor);
     },
   },
 };

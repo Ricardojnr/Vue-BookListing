@@ -16,7 +16,7 @@ import BookItem from "./BookItem";
 import BookForm from "./BookForm";
 
 export default {
-  components: { BookItem },
+  components: { BookItem, BookForm },
   name: "BookList",
   data() {
     return {
@@ -30,7 +30,7 @@ export default {
   },
 
   methods: {
-    appendBoook(bookTitle, bookAuthor) {
+    appendBook(bookTitle, bookAuthor) {
       this.books.push({ title: bookTitle, author: bookAuthor });
     },
   },
